@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.calc_body {
+    height: 70vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.calc_display {
+    height: 25%;
+    width: 96%;
+    border: 2px solid black;
+    border-radius: 10px 10px 3px 3px;
+    margin: 1.5% auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 30px;
+    
+}
+.calc_btn {
+    height: 70%;
+    width: 96%;
+    /* border: 2px solid black;
+    border-radius: 3px 3px 10px 10px ; */
+    margin: 1.5% auto;
+    display: flex;
+    font-size: 20px;
+    
+}
+.calc_num {
+    height: 98%;
+    width: 73%;
+    border: 2px solid black;
+    border-radius: 3px 3px 3px 8px;
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.calc_op {
+    height: 98%;
+    width: 23%;
+    border: 2px solid black;
+    border-radius: 3px 3px 8px 3px;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.num {
+    height: 20%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(217, 205, 205,1);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.num:hover {
+    cursor: pointer;
+    background-color: rgba(217, 205, 205,0.5);
+}
+.op_btns {
+    height: 18%;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    background-color: rgb(255, 165, 0);
+    color: white;
+}
+.op_btns:hover {
+    cursor: pointer;
+    background-color: rgba(255, 165, 0,0.7);
+}
+
+@media (max-width : 890px) {
+    .calc_body {
+        width: 40vw;
+    }
+}
+@media (max-width : 650px) {
+    .calc_body {
+        width: 50vw;
+    }
+}
+@media (max-width : 480px) {
+    .calc_body {
+        width: 60vw;
+    }
+}
+@media (max-width : 390px) {
+    .calc_body {
+        width: 70vw;
+    }
+}
+@media (max-width : 280px) {
+    .calc_body {
+        width: 90vw;
+    }
+}
